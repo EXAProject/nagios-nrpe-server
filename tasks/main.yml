@@ -3,7 +3,7 @@
 
 # Include variables at the start so they're in scope
 - name: Include OS-Specific variables
-  include_tasks: "variables.yml"
+  include: "variables.yml"
 
 # Install our needed packages for each specific OS
 - include: "packages-{{ ansible_os_family }}.yml"
